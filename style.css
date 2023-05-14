@@ -1,54 +1,75 @@
 * {
     margin: 0;
     padding: 0;
-}
-
-body{
-    font-family: 'Montserrat', sans-serif;
-}
-
-header {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
     
 }
+
+p {
+    word-spacing: 5px;
+}
+
+h1 {
+    word-spacing: -2px;
+    font-family: 'Montserrat', sans-serif;
+    color: #242873;
+}
+
+h2 {
+    word-spacing: -2px;
+    font-family: 'Montserrat', sans-serif;
+    color: #242873;
+}
+
+a {
+    text-decoration: none;
+    color: #242873;
+    
+}
+
+a:hover {
+    background-color:  #f2dfbb;
+}
+
+
+/* Define o elemento como um container flexível e orienta os itens na horizontal */
 .cabecalho {
+    margin-top: 0;
+    position: absolute;
+    font-family: 'Poppins', sans-serif;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
-    position: relative;
+    position: absolute;
     width: 100%;
-    height: 80px;
+    height: 50;
     background-color: #78bfa5
-   
-  }
-  
-  Figure {
-    float: left;
-  }
-  
+}
+
   .endereco-cabecalho {
     display: flex;
+    flex-direction: row;  /*alinha em linha o items */
     justify-content: center; /* alinha os itens à esquerda */
     align-items: center; /* centraliza verticalmente */
-    margin-right: auto; /* empurra os itens para a esquerda */
-    padding: 0 70px;
+    margin: right 0;; /* empurra os itens para a esquerda */
+    padding: 0;
   }
   
+
   
   .links-cabecalho {
     display: flex;
     justify-content:left; /* centraliza horizontalmente */
     align-items:flex-end ; /* centraliza verticalmente */
     flex-direction: column; /* exibe os itens em coluna */
-    margin: 0; /* remove as margens padrão */
-    padding: 0 50px; /* remove os preenchimentos padrão */
+    margin-left: 30px; /* remove as margens padrão */
+    padding: 0; /* remove os preenchimentos padrão */
     list-style: none; /* remove os marcadores de lista */
+    font-size: 12px;
   }
   
   
+<<<<<<< HEAD
   .links-cabecalho li {
     display: inline-block;
     margin-right: 0 50px;
@@ -63,17 +84,30 @@ header {
     text-decoration: none;
 }
 
+=======
+>>>>>>> css
 .lista-endereco {
     display: flex;
     list-style: none;
+<<<<<<< HEAD
     white-space: nowrap;
+=======
+    display: flex;
+    flex-direction: row;  /*alinha em linha o items */
+    justify-content: center; /* alinha os itens à esquerda */
+    align-items: center; /* centraliza verticalmente */
+    padding: 0;
+    color: #242873;
+>>>>>>> css
 }
+
 
 .contato-cabecalho {
     list-style: none;
     display: inline-flex;
     justify-content: space-between;
     margin: 0;
+<<<<<<< HEAD
     padding: 0 8%;
     white-space: nowrap;
     right: 0%;
@@ -82,6 +116,27 @@ header {
 }
 
 /* Mexi no width: 2%; top: 30px e left: 93%. */
+=======
+    padding: 0;
+    color: #242873;
+}
+
+
+
+.text {
+    text-shadow: 10px 15px 7px rgba(0, 0, 0, 0.46), -1px -1px 10px rgba(255,255,255,0.3);
+    color:  #242873;
+    font-size: 32px;
+}
+
+.destaque {
+    text-shadow: 10px 15px 7px rgba(0, 0, 0, 0.46), -1px -1px 10px rgba(255,255,255,0.3);
+    color:  #78bfa5;
+    font-size: 26px;
+    font-family: 'Foldit', cursive;
+}
+
+>>>>>>> css
 
 .hamburguer {
     display: flex;
@@ -125,6 +180,7 @@ header {
   .menu.ativo {
     display: block;
   }
+<<<<<<< HEAD
   /*CSS do HEADER*/
 
   /*.endereco-cabecalho ul {
@@ -188,3 +244,65 @@ header {
     background: #78bfa9;
     transform: scale(1.1);
   }
+=======
+
+body {
+    background-image: url(/img/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hero {
+    position: absolute;
+    background-color: #f2dfbb;
+    margin-top: 200px;
+    height: 700px;
+    display: flex;
+    flex-direction: row;
+    font-family: 'Poppins', sans-serif;
+
+
+}
+
+.busca-cidade {
+    margin-top: 100px; /* ou outro valor que desejar */
+    left: 0;
+}
+
+.footer {
+    display: flexbox;
+    flex-direction: row;
+    position: relative;
+    margin-top: 60%; /* ou outro valor que desejar */
+    left: 0;
+}
+
+.btn-pesquisar {
+    border: none;
+    background-color: #78bfa5;
+    color: #242873;
+    padding: 5px 16px;
+    border-radius: 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .btn-pesquisar:hover {
+    background-color: #5c8c72;
+  }
+  
+  .btn-pesquisar i {
+    margin-right: 8px;
+  }
+  
+  input[type="text"] {
+    width: 300px;
+    height: 36px;
+    font-size: 18px;
+    padding: 0px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+>>>>>>> css
