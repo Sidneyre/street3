@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    
 }
 
 p {
@@ -9,6 +10,14 @@ p {
 
 h1 {
     word-spacing: -2px;
+    font-family: 'Montserrat', sans-serif;
+    color: #242873;
+}
+
+h2 {
+    word-spacing: -2px;
+    font-family: 'Montserrat', sans-serif;
+    color: #242873;
 }
 
 a {
@@ -21,19 +30,11 @@ a:hover {
     background-color:  #f2dfbb;
 }
 
-body{
-    
-}
-
-header {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    
-}
 
 /* Define o elemento como um container flexível e orienta os itens na horizontal */
 .cabecalho {
+    margin-top: 0;
+    position: absolute;
     font-family: 'Poppins', sans-serif;
     display: flex;
     flex-direction: row;
@@ -45,11 +46,6 @@ header {
     background-color: #78bfa5
 }
 
-  Figure {
-    float: left;
-
-  }
-  
   .endereco-cabecalho {
     display: flex;
     flex-direction: row;  /*alinha em linha o items */
@@ -150,5 +146,64 @@ header {
   
   .menu.ativo {
     display: block;
+  }
+
+body {
+    background-image: url(/img/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hero {
+    position: absolute;
+    background-color: #f2dfbb;
+    margin-top: 200px;
+    height: 700px;
+    display: flex;
+    flex-direction: row;
+    font-family: 'Poppins', sans-serif;
+
+
+}
+
+.busca-cidade {
+    margin-top: 100px; /* ou outro valor que desejar */
+    left: 0;
+}
+
+.footer {
+    display: flexbox;
+    flex-direction: row;
+    position: relative;
+    margin-top: 60%; /* ou outro valor que desejar */
+    left: 0;
+}
+
+.btn-pesquisar {
+    border: none;
+    background-color: #78bfa5;
+    color: #242873;
+    padding: 5px 16px;
+    border-radius: 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .btn-pesquisar:hover {
+    background-color: #5c8c72;
+  }
+  
+  .btn-pesquisar i {
+    margin-right: 8px;
+  }
+  
+  input[type="text"] {
+    width: 300px;
+    height: 36px;
+    font-size: 18px;
+    padding: 0px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
   }
   
