@@ -117,7 +117,12 @@ header {
   .menu.ativo {
     display: block;
   }
-  
+  /*CSS do HEADER*/
+
+  /*.endereco-cabecalho ul {
+    display: inline;
+    margin: 0 0 0 15px;
+  }*/
 
   /*CSS do FOOTER*/
 
