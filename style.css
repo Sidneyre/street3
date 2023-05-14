@@ -3,8 +3,26 @@
     padding: 0;
 }
 
+p {
+    word-spacing: 5px;
+}
+
+h1 {
+    word-spacing: -2px;
+}
+
+a {
+    text-decoration: none;
+    color: #242873;
+    
+}
+
+a:hover {
+    background-color:  #f2dfbb;
+}
+
 body{
-    font-family: 'Montserrat', sans-serif;
+    
 }
 
 header {
@@ -13,67 +31,83 @@ header {
     justify-content: space-between;
     
 }
+
+/* Define o elemento como um container flexível e orienta os itens na horizontal */
 .cabecalho {
+    font-family: 'Poppins', sans-serif;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
-    position: relative;
+    position: absolute;
     width: 100%;
-    height: 80px;
+    height: 50;
     background-color: #78bfa5
-   
-  }
-  
+}
+
   Figure {
     float: left;
+
   }
   
   .endereco-cabecalho {
     display: flex;
+    flex-direction: row;  /*alinha em linha o items */
     justify-content: center; /* alinha os itens à esquerda */
     align-items: center; /* centraliza verticalmente */
-    margin-right: auto; /* empurra os itens para a esquerda */
-    padding: 0 70px;
+    margin: right 0;; /* empurra os itens para a esquerda */
+    padding: 0;
   }
   
+
   
   .links-cabecalho {
     display: flex;
     justify-content:left; /* centraliza horizontalmente */
     align-items:flex-end ; /* centraliza verticalmente */
     flex-direction: column; /* exibe os itens em coluna */
-    margin: 0; /* remove as margens padrão */
-    padding: 0 50px; /* remove os preenchimentos padrão */
+    margin-left: 30px; /* remove as margens padrão */
+    padding: 0; /* remove os preenchimentos padrão */
     list-style: none; /* remove os marcadores de lista */
+    font-size: 12px;
   }
   
   
-  .links-cabecalho li {
-    display: inline-block;
-    margin-right: 0px 50px;
-  }
-  
-  .links-cabecalho li:last-child {
-    margin-right: 0;
-  }
-  
-
-.links-cabecalho a {
-    text-decoration: none;
-}
-
 .lista-endereco {
     list-style: none;
+    display: flex;
+    flex-direction: row;  /*alinha em linha o items */
+    justify-content: center; /* alinha os itens à esquerda */
+    align-items: center; /* centraliza verticalmente */
+    padding: 0;
+    color: #242873;
 }
+
 
 .contato-cabecalho {
     list-style: none;
     display: flex;
     justify-content: space-between;
     margin: 0;
-    padding: 0 800px;
+    padding: 0;
+    color: #242873;
 }
+
+
+
+.text {
+    text-shadow: 10px 15px 7px rgba(0, 0, 0, 0.46), -1px -1px 10px rgba(255,255,255,0.3);
+    color:  #242873;
+    font-size: 32px;
+}
+
+.destaque {
+    text-shadow: 10px 15px 7px rgba(0, 0, 0, 0.46), -1px -1px 10px rgba(255,255,255,0.3);
+    color:  #78bfa5;
+    font-size: 26px;
+    font-family: 'Foldit', cursive;
+}
+
 
 .hamburguer {
     display: flex;
