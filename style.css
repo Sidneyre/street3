@@ -180,15 +180,14 @@ a:hover {
   .menu.ativo {
     display: block;
   }
-<<<<<<< HEAD
-  /*CSS do HEADER*/
+  CSS do HEADER*/
 
-  /*.endereco-cabecalho ul {
+  .endereco-cabecalho ul {
     display: inline;
     margin: 0 0 0 15px;
-  }*/
+  }
 
-  /*CSS do FOOTER*/
+  CSS do FOOTER
 
   footer {
     text-align: center;
@@ -201,15 +200,15 @@ a:hover {
     margin: 20px 0 0;
   }
 
-  /*CSS do Copyright
+  CSS do Copyright
 
   .copyright {
     color: #0000;
     font-size: 13px;
     margin: 20px 0 0;
-  }*/
+  }
 
-  /*CSS da Página de Contato*/
+  CSS da Página de Contato
 
   form {
     margin: 40px 0;
@@ -244,65 +243,3 @@ a:hover {
     background: #78bfa9;
     transform: scale(1.1);
   }
-=======
-
-body {
-    background-image: url(/img/background.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.hero {
-    position: absolute;
-    background-color: #f2dfbb;
-    margin-top: 200px;
-    height: 700px;
-    display: flex;
-    flex-direction: row;
-    font-family: 'Poppins', sans-serif;
-
-
-}
-
-.busca-cidade {
-    margin-top: 100px; /* ou outro valor que desejar */
-    left: 0;
-}
-
-.footer {
-    display: flexbox;
-    flex-direction: row;
-    position: relative;
-    margin-top: 60%; /* ou outro valor que desejar */
-    left: 0;
-}
-
-.btn-pesquisar {
-    border: none;
-    background-color: #78bfa5;
-    color: #242873;
-    padding: 5px 16px;
-    border-radius: 20px;
-    font-size: 16px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-  }
-  
-  .btn-pesquisar:hover {
-    background-color: #5c8c72;
-  }
-  
-  .btn-pesquisar i {
-    margin-right: 8px;
-  }
-  
-  input[type="text"] {
-    width: 300px;
-    height: 36px;
-    font-size: 18px;
-    padding: 0px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-  }
-  
->>>>>>> css
