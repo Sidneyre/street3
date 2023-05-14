@@ -64,7 +64,10 @@ header {
 }
 
 .lista-endereco {
+    display: flex;
     list-style: none;
+    white-space: nowrap;
+
 }
 
 .contato-cabecalho {
@@ -73,7 +76,11 @@ header {
     justify-content: space-between;
     margin: 0;
     padding: 0 800px;
+    white-space: nowrap;
+    right: 90%;
 }
+
+/* Mexi no width: 2%; position: relative (estava absoluto); top: 30px e left: 93%. */
 
 .hamburguer {
     display: flex;
@@ -84,9 +91,9 @@ header {
     border: none;
     background-color: transparent;
     justify-content: space-between;
-    position: relative;
-	  top: 3px;
-    left: 25%;
+    position: absolute;
+	  top: 30px;
+    left: 93%;
 
   }
   
