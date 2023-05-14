@@ -51,7 +51,7 @@ header {
   
   .links-cabecalho li {
     display: inline-block;
-    margin-right: 0px 50px;
+    margin-right: 0 50px;
   }
   
   .links-cabecalho li:last-child {
@@ -67,20 +67,21 @@ header {
     display: flex;
     list-style: none;
     white-space: nowrap;
-
 }
 
 .contato-cabecalho {
     list-style: none;
-    display: flex;
+    display: inline-flex;
     justify-content: space-between;
     margin: 0;
-    padding: 0 800px;
+    padding: 0 8%;
     white-space: nowrap;
-    right: 90%;
+    right: 0%;
+    left: 10%;
+    position: relative;
 }
 
-/* Mexi no width: 2%; position: relative (estava absoluto); top: 30px e left: 93%. */
+/* Mexi no width: 2%; top: 30px e left: 93%. */
 
 .hamburguer {
     display: flex;
