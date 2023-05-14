@@ -123,7 +123,7 @@ header {
 
   footer {
     text-align: center;
-    background: url("verde_agua.jpg");
+    background: #78bfa5; /*url("/img/verde_agua.jpg");*/
     padding: 40px 0;
   }
   .copyright {
