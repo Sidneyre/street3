@@ -77,16 +77,16 @@ header {
 
 .hamburguer {
     display: flex;
-    width: 30px;
+    width: 2%;
     height: 20px;
     cursor: pointer;
     padding: 0;
     border: none;
     background-color: transparent;
     justify-content: space-between;
-    position: absolute;
-	  top: 40px;
-    right: 0;
+    position: relative;
+	  top: 3px;
+    left: 25%;
 
   }
   
