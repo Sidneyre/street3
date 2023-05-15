@@ -67,9 +67,6 @@ a:hover {
     list-style: none; /* remove os marcadores de lista */
     font-size: 12px;
   }
-  
-  
-<<<<<<< HEAD
   .links-cabecalho li {
     display: inline-block;
     margin-right: 0 50px;
@@ -83,22 +80,16 @@ a:hover {
 .links-cabecalho a {
     text-decoration: none;
 }
-
-=======
->>>>>>> css
 .lista-endereco {
     display: flex;
     list-style: none;
-<<<<<<< HEAD
     white-space: nowrap;
-=======
     display: flex;
     flex-direction: row;  /*alinha em linha o items */
     justify-content: center; /* alinha os itens à esquerda */
     align-items: center; /* centraliza verticalmente */
     padding: 0;
     color: #242873;
->>>>>>> css
 }
 
 
@@ -107,22 +98,12 @@ a:hover {
     display: inline-flex;
     justify-content: space-between;
     margin: 0;
-<<<<<<< HEAD
     padding: 0 8%;
     white-space: nowrap;
     right: 0%;
     left: 10%;
     position: relative;
 }
-
-/* Mexi no width: 2%; top: 30px e left: 93%. */
-=======
-    padding: 0;
-    color: #242873;
-}
-
-
-
 .text {
     text-shadow: 10px 15px 7px rgba(0, 0, 0, 0.46), -1px -1px 10px rgba(255,255,255,0.3);
     color:  #242873;
@@ -136,8 +117,7 @@ a:hover {
     font-family: 'Foldit', cursive;
 }
 
->>>>>>> css
-
+/* Mexi no width: 2%; top: 30px e left: 93%. */
 .hamburguer {
     display: flex;
     width: 2%;
@@ -152,8 +132,6 @@ a:hover {
     left: 93%;
 
   }
-  
-  .hamburguer::before,
   .hamburguer::after {
     content: '';
     display: block;
@@ -180,14 +158,15 @@ a:hover {
   .menu.ativo {
     display: block;
   }
-  CSS do HEADER*/
+  
+  /*CSS do HEADER*/
 
   .endereco-cabecalho ul {
     display: inline;
     margin: 0 0 0 15px;
   }
 
-  CSS do FOOTER
+  /*CSS do FOOTER*/
 
   footer {
     text-align: center;
@@ -200,7 +179,7 @@ a:hover {
     margin: 20px 0 0;
   }
 
-  CSS do Copyright
+  /*CSS do Copyright*/
 
   .copyright {
     color: #0000;
@@ -208,7 +187,7 @@ a:hover {
     margin: 20px 0 0;
   }
 
-  CSS da Página de Contato
+  /*CSS da Página de Contato*/
 
   form {
     margin: 40px 0;
