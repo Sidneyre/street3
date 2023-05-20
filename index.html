@@ -52,46 +52,46 @@
           </header>
           
 		<main class="hero">
-			<section class="busca-cidade">
+			<section>
                 <div >
-                <span><h1>Pontos Turistico</h1></span> 
+                <span class="titulo-hero"><h2> <strong> Pontos Turisticos </strong></h2></span> 
+                <hr>
                 <br>
-                <p>Este é um portal com informações sobre pontos turísticos de várias cidades. 
+                <p class="texto-hero">Este é um portal com informações sobre pontos turísticos de várias cidades. 
                 <br> 
-                você pode encontrar dicas sobre lugares para visitar, como chegar lá e o que esperar de cada atração. Descubra novos destinos e planeje suas próximas viagens de forma mais fácil e divertida!</p>
+                Você pode encontrar dicas sobre lugares para visitar, como chegar lá e o que esperar de cada atração. 
+                <br> Descubra novos destinos e planeje suas próximas viagens de forma mais fácil e divertida!</p>
           
-                <div>
-                    <h2>Escreva o nome da cidade</h2>
-                    <br>
+                <hr>
+                    <h1><strong> Escreva o nome da cidade:</strong></h1>
+          
+                    <div class="fomulario-consulta">
                     <form action="">
-                    <label for="Cidade">Cidade: </label>
+                    <label for="Cidade"><h1> Cidade:</h1> </label>
                     <input type="text" name="cidade" id="cidade">
                     </form>
-                    <br>
                     <button type="submit" class="btn-pesquisar">
                         <i class="fa fa-search"></i> Pesquisar
                       </button>
+
                       
 
-                </div>
+                  </div>
                 </div>
 		 	</section>
 
-		 	<section class="foto-hero">
-				<img src="img/atracoes-rio-de-janeiro-cristo.jpg" alt="pontos-turisticos">
-			
-            <div>
-                <p><strong>selecione o estado</strong></p>
-                <nav>
-                    <ul>
-                        <li><a href="/minas-gerais/cidade-minas.html">Pontos turísticos - Minas Gerais</a></li>
-                        <li><a href="/rio-de-janeiro/rio-de-janeiro.html">Pontos turísticos - Rio de Janeiro</a></li>
-                        <li><a href="/sao-paulo/cidade-sao-paulo.html">Pontos Turisticos - São Paulo</a></li>
-                        <li><a href="/contato.html">Fale conosco</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </section>
+		 	<aside > <!-- adicionei aside -->
+        <figure>
+				<img class="foto-hero" src="img/atracoes-rio-de-janeiro-cristo.jpg" alt="pontos-turisticos">
+      </figure>      
+        <hr>
+        <h1>selecione o estado:</h1>
+        <select class="seletor-hero">
+          <option value="/minas-gerais/cidade-minas.html">Pontos turísticos - Minas Gerais</option>
+          <option value="/rio-de-janeiro/rio-de-janeiro.html">Pontos turísticos - Rio de Janeiro</option>
+          <option value="/sao-paulo/cidade-sao-paulo.html">Pontos Turisticos - São Paulo</option>
+        </select>
+        </aside>
 		</main>
 		
 	</body>	
@@ -99,7 +99,7 @@
          Se preferir, pode retornar o anterior, somente apagar o atual e retirar
          o de baixo de comentario -->
 
-    <hr>
+    
     <footer>
         <img src="img/street3-low-resolution-logo-black-on-white-background.png">
         <p>&copy; Copyright Street 3 - just click to find - 2023</p></a> 
