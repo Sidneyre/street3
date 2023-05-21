@@ -11,8 +11,71 @@ body {
 figure{
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
+
+.figure-campos-jordao {
+  border: rgba(0, 0, 0, 0.1);
+  padding: 7;
+  
+
+}
+
+.informacao-cidades {
+ margin-left: 70px;
+ margin-top: 20;
+ margin-right: 8%;
+ display: block;
+
+}
+
+.aside-cidades-pontos {
+  overflow: scroll;
+  max-width: 720px;
+  height: 600px;
+}
+
+.pontos-turisticos {
+  padding: 10px;
+}
+.pontos-turisticos {
+    word-spacing: 5px;
+    font-family: 'Montserrat', sans-serif;
+    color: #242873;
+}
+
+.clima {
+  padding: 10px;
+}
+
+.clima p, strong, {
+    word-spacing: 5px;
+    font-family: 'Montserrat', sans-serif;
+    color: #242873;
+}
+
+.dicas {
+  padding: 10px;
+}
+
+.dicas li {
+  word-spacing: 5px;
+  font-family: 'Montserrat', sans-serif;
+  color: #242873;
+}
+
+.eventos{
+  padding: 10px;
+}
+
+.eventos li {
+  word-spacing: 5px;
+  font-family: 'Montserrat', sans-serif;
+  color: #242873;
+}
 p {
     word-spacing: 5px;
+    font-family: 'Montserrat', sans-serif;
+    color: #242873;
+
   
 }
 
@@ -56,69 +119,24 @@ a:hover {
     background-color: #78bfa5
 }
 
-  /* .endereco-cabecalho {
-    display: flex;
-    flex-direction: row; 
-    justify-content: center; 
-    align-items: center; 
-    margin: right 0;
-    padding: 0;
-  }
-   */
+menu {
+  display: none;
+}
 
-  
-  /* .links-cabecalho {
-    display: flex;
-    justify-content:left; 
-    align-items:flex-end ; 
-    flex-direction: column; 
-    margin-left: 30px;
-    padding: 0; 
-    list-style: none; 
-    font-size: 12px;
-  } */
+i#burguer {
+  background:none;
+  color: #242873;
+  display: block;
+  text-align: center ;
+  padding: 10px;
+  cursor: pointer;
 
-  /* .links-cabecalho li {
-    display: inline-block;
-    margin-right: 0 50px;
-  } */
-  
-  /* .links-cabecalho li:last-child {
-    margin-right: 0;
-  } */
-  
+}
 
-/* .links-cabecalho a {
-    text-decoration: none;
-} */
-
-
-/* .lista-endereco {
-    display: flex;
-    list-style: none;
-    white-space: nowrap;
-    display: flex;
-    flex-direction: row;  
-    justify-content: center; 
-    align-items: center; 
-    padding: 0;
-    color: #242873;
-} */
-
-
-/* .contato-cabecalho {
-    list-style: none;
-    display: inline-flex;
-    justify-content: space-between;
-    margin: 0;
-    padding: 0 8%;
-    white-space: nowrap;
-    right: 0%;
-    left: 10%;
-    position: relative;
-} */
-
-
+i#burguer:hover {
+  background-color: #f2dfbb;
+  color:#242873;
+}
 .text {
     text-shadow: 10px 15px 7px rgba(0, 0, 0, 0.46), -1px -1px 10px rgba(255,255,255,0.3);
     color:  #242873;
@@ -209,21 +227,53 @@ aside {
   
 }
 
+.aside-cidades {
+  max-width: 1200px;
+  margin: 0;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.text-cidades-cidades {
+  margin: 10%;
+}
+
+.lista-cidades-cidade {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+  list-style: none;
+  padding: 10px;
+  margin: 10%;
+}
+
+.lista-cidades-cidade li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.lista-cidades-cidade li a {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  text-decoration: none;
+}
+
+.lista-cidades-cidade li a h2 {
+  margin-right: 10px;
+}
+
+.lista-cidades-cidade li a .btn-pesquisar {
+  margin-left: auto;
+}
+
 .imagem-cidades {
   width: 800px;
   height: 600px;
 }
-
-/* Mexi no width: 2%; top: 30px e left: 93%. */
-
-  /*CSS do HEADER*/
-
-  /* .endereco-cabecalho ul {
-    display: inline;
-    margin: 0 0 0 15px;
-  } */
-
-  /*CSS do FOOTER*/
 
   footer {
     text-align: center;
