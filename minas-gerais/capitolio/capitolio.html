@@ -1,15 +1,55 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width">
-	<title>Pontos Turísticos - Minas Gerais</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="shortcut icon" type="image/x-icon" href="assets/fav.png">
-	<link rel="stylesheet" href="style.css">
+
+	<link rel="stylesheet" href="/reset.css">
+	<link rel="stylesheet" href="/style.css">
+
+	<link rel="shortcut icon" type="image/x-icon" href="assets/fav.png">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" href="https://cdn.positus.global/production/resources/robbu/whatsapp-button/whatsapp-button.css">
+	<a id="robbu-whatsapp-button" target="_blank" href="https://api.whatsapp.com/send?phone=21973967671&text=Ol%C3%A1!%20%0A%0ADeixe%20sua%20mensagem%20e%20responderemos%20o%20mais%20breve.">
+	  <div class="rwb-tooltip">Fale Conosco!</div>
+	  <img src="https://cdn.positus.global/production/resources/robbu/whatsapp-button/whatsapp-icon.svg"></a>
+
+    <title>Rio de Janeiro</title>
 </head>
 <body>
-	<iframe src="/header_footer.html" frameborder="0" scrolling="no"></iframe>
-</header>
+	<header>
+		<nav class="cabecalho">
+		  <Figure>
+			<a href="/index.html" target="_parent">
+			<h1><img class="logo" src="/img/STREET.png" alt="logo"></h1></a>
+		  </Figure>
+		  <!-- <span class="text">
+			<strong> STREET. 3 <span class="destaque">Encontre com somente um clique!</span></strong></a></span> -->
+			<ul class="lista-endereco">
+			  <li><p> Av. Dr. Moraes Salles, 711 - Nova Campinas, Campinas - SP </p></li>
+			</ul>
+			<ul class="contato-cabecalho">
+				<li> <p>Telefone:</p> </li>
+				<li><p> +55 19 98442-6422</p></li>
+			</ul>
+			
+			<i id="burguer" class="material-symbols-outlined" onclick="clickMenu()">menu</i>
+			<menu id="items">
+			<ul class="links-cabecalho">
+			  <li><p><a href="/minas-gerais/cidade-minas.html" target="_parent">Pontos turísticos - Minas Gerais</a></p></li>
+			  <li><p><a href="/rio-de-janeiro/rio-de-janeiro.html" target="_parent">Pontos turísticos - Rio de Janeiro</a></p></li>
+			  <li><p><a href="/sao-paulo/cidade-sao-paulo.html" target="_parent">Pontos Turisticos - São Paulo</a></p></li>
+			  <li><p><a href="/contato.html" target="_parent">Fale conosco</a></p></li>
+			</ul>
+			</menu>
+		</nav>
+	</header>
 	<main>
         <section>
             <div>
@@ -71,8 +111,18 @@
             </div>   
         </section>
 	</main>
-	<footer>
-		<iframe src="/header_footer.html" frameborder="0" scrolling="no"></iframe>
-	</footer>
+    <footer>
+        <p>&copy; Copyright Street 3 - Todos os direitos reservados - 2023</p></a> 
+    </footer>
+    <script>
+		function clickMenu(){
+		  if (items.style.display == 'block') {
+			  items.style.display = 'none'
+		  }
+		  else {
+			items.style.display = 'block'
+		  }
+		}
+	</script>
 </body>	
 </html>
