@@ -1,11 +1,82 @@
+body {
+  background-image: url(img/praia-fundo.jpg);
+  
+}
 * {
     margin: 0;
     padding: 0;
     
 }
 
+figure{
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.figure-campos-jordao {
+  border: rgba(0, 0, 0, 0.1);
+  padding: 7;
+  
+
+}
+
+.informacao-cidades {
+ margin-left: 70px;
+ margin-top: 20;
+ margin-right: 8%;
+ display: block;
+
+}
+
+.aside-cidades-pontos {
+  overflow: scroll;
+  max-width: 720px;
+  height: 600px;
+}
+
+.pontos-turisticos {
+  padding: 10px;
+}
+.pontos-turisticos {
+    word-spacing: 5px;
+    font-family: 'Montserrat', sans-serif;
+    color: #242873;
+}
+
+.clima {
+  padding: 10px;
+}
+
+.clima p, strong, {
+    word-spacing: 5px;
+    font-family: 'Montserrat', sans-serif;
+    color: #242873;
+}
+
+.dicas {
+  padding: 10px;
+}
+
+.dicas li {
+  word-spacing: 5px;
+  font-family: 'Montserrat', sans-serif;
+  color: #242873;
+}
+
+.eventos{
+  padding: 10px;
+}
+
+.eventos li {
+  word-spacing: 5px;
+  font-family: 'Montserrat', sans-serif;
+  color: #242873;
+}
 p {
     word-spacing: 5px;
+    font-family: 'Montserrat', sans-serif;
+    color: #242873;
+
+  
 }
 
 h1 {
@@ -18,6 +89,9 @@ h2 {
     word-spacing: -2px;
     font-family: 'Montserrat', sans-serif;
     color: #242873;
+    font-size: 24px; 
+    font-weight: bold; 
+    margin-bottom: 20px; 
 }
 
 a {
@@ -25,6 +99,7 @@ a {
     color: #242873;
     
 }
+
 
 a:hover {
     background-color:  #f2dfbb;
@@ -38,75 +113,33 @@ a:hover {
 /* Define o elemento como um container flexível e orienta os itens na horizontal */
 .cabecalho {
     margin-top: 0;
-    position: absolute;
     font-family: 'Poppins', sans-serif;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
-    position: absolute;
     width: 100%;
     height: 50;
     background-color: #78bfa5
 }
 
-  .endereco-cabecalho {
-    display: flex;
-    flex-direction: row;  /*alinha em linha o items */
-    justify-content: center; /* alinha os itens à esquerda */
-    align-items: center; /* centraliza verticalmente */
-    margin: right 0;; /* empurra os itens para a esquerda */
-    padding: 0;
-  }
-  
-
-  
-  .links-cabecalho {
-    display: flex;
-    justify-content:left; /* centraliza horizontalmente */
-    align-items:flex-end ; /* centraliza verticalmente */
-    flex-direction: column; /* exibe os itens em coluna */
-    margin-left: 30px; /* remove as margens padrão */
-    padding: 0; /* remove os preenchimentos padrão */
-    list-style: none; /* remove os marcadores de lista */
-    font-size: 12px;
-  }
-  .links-cabecalho li {
-    display: inline-block;
-    margin-right: 0 50px;
-  }
-  
-  .links-cabecalho li:last-child {
-    margin-right: 0;
-  }
-  
-
-.links-cabecalho a {
-    text-decoration: none;
-}
-.lista-endereco {
-    display: flex;
-    list-style: none;
-    white-space: nowrap;
-    display: flex;
-    flex-direction: row;  /*alinha em linha o items */
-    justify-content: center; /* alinha os itens à esquerda */
-    align-items: center; /* centraliza verticalmente */
-    padding: 0;
-    color: #242873;
+menu {
+  display: none;
 }
 
+i#burguer {
+  background:none;
+  color: #242873;
+  display: block;
+  text-align: center ;
+  padding: 10px;
+  cursor: pointer;
 
-.contato-cabecalho {
-    list-style: none;
-    display: inline-flex;
-    justify-content: space-between;
-    margin: 0;
-    padding: 0 8%;
-    white-space: nowrap;
-    right: 0%;
-    left: 10%;
-    position: relative;
+}
+
+i#burguer:hover {
+  background-color: #f2dfbb;
+  color:#242873;
 }
 .text {
     text-shadow: 10px 15px 7px rgba(0, 0, 0, 0.46), -1px -1px 10px rgba(255,255,255,0.3);
@@ -116,66 +149,146 @@ a:hover {
 
 .destaque {
     text-shadow: 10px 15px 7px rgba(0, 0, 0, 0.46), -1px -1px 10px rgba(255,255,255,0.3);
-    color:  #78bfa5;
+    color: #333;
     font-size: 26px;
     font-family: 'Foldit', cursive;
 }
 
-/* Mexi no width: 2%; top: 30px e left: 93%. */
-.hamburguer {
-    display: flex;
-    width: 2%;
-    height: 20px;
-    cursor: pointer;
-    padding: 0;
-    border: none;
-    background-color: transparent;
-    justify-content: space-between;
-    position: absolute;
-	  top: 30px;
-    left: 93%;
-
-  }
-  .hamburguer::after {
-    content: '';
-    display: block;
-    width: 100%;
-    height: 3px;
-    position: absolute;
-    left: 0;
-    background-color: #333;
-    transition: transform 0.3s ease;
-  }
+.hero {
+ 
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  position: relative;
+  background-color: #f2dfbb;
+  border: 0;
+  padding: 70px;
+  margin-top: px; 
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   
-  .hamburguer::before {
-    top: 0;
-  }
-  
-  .hamburguer::after {
-    bottom: 0;
-  }
+}
 
-  .menu {
-    display: none;
-  }
-  
-  .menu.ativo {
-    display: block;
-  }
-  
-  /*CSS do HEADER*/
+hr {
+  border: none; 
+  height: 2px;
+  background-color: #242873; 
+  margin: 20px 0;
+}
 
-  .endereco-cabecalho ul {
-    display: inline;
-    margin: 0 0 0 15px;
-  }
 
-  /*CSS do FOOTER*/
+.titulo-hero {
+  font-family: 'Foldit', cursive;
+  font-size: 28px;
+}
+
+.texto-hero {
+  margin: 2px;
+  font-family: 'Foldit', cursive;
+  font-size: 12px;
+  line-height: 150%;
+  
+
+}
+
+.formulario-consulta {
+  padding: 0;
+  margin: 0;
+}
+
+form {
+  margin: 0;
+  padding: 0px;
+}
+
+.btn-pesquisar {
+  background-color: #242873; 
+  color: #ffffff; 
+  border: none; 
+  border-radius: 5px; 
+  padding: 10px 20px; 
+  font-size: 16px;
+  cursor: pointer; 
+
+}
+
+.btn-pesquisar:hover {
+  background-color: gray; /* Define a cor de fundo do botão ao passar o mouse */
+}
+
+.foto-hero {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  
+
+}
+
+aside {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  
+  
+}
+
+.aside-cidades {
+  max-width: 1200px;
+  margin: 0;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.text-cidades-cidades {
+  margin: 10%;
+}
+
+.lista-cidades-cidade {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+  list-style: none;
+  padding: 10px;
+  margin: 10%;
+}
+
+.lista-cidades-cidade li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.lista-cidades-cidade li a {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  text-decoration: none;
+}
+
+.lista-cidades-cidade li a h2 {
+  margin-right: 10px;
+}
+
+.lista-cidades-cidade li a .btn-pesquisar {
+  margin-left: auto;
+}
+
+.imagem-cidades {
+  width: 800px;
+  height: 600px;
+}
 
   footer {
     text-align: center;
     background: #78bfa5; /*url("/img/verde_agua.jpg");*/
     padding: 40px 0;
+    display: flex;
+    width: 100%;
+    height: 50;
+    align-items: center;
+    justify-content: center;
+    margin-top: 11.5%;
   }
   .copyright {
     color: #FFFFFF;
