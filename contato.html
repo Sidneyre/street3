@@ -1,37 +1,61 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" type="image/x-icon" href="assets/fav.png">
     <title>contato</title>
+
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://cdn.positus.global/production/resources/robbu/whatsapp-button/whatsapp-button.css">
+<a id="robbu-whatsapp-button" target="_blank" href="https://api.whatsapp.com/send?phone=21973967671&text=Ol%C3%A1!%20%0A%0ADeixe%20sua%20mensagem%20e%20responderemos%20o%20mais%20breve.">
+  <div class="rwb-tooltip">Fale Conosco!</div>
+  <img src="https://cdn.positus.global/production/resources/robbu/whatsapp-button/whatsapp-icon.svg">
+</a>
+
 </head>
 <body>
-<header>
-	<iframe src="header_footer.html" frameborder="0" scrolling="no"></iframe>
-</header>
+    <header>
+	    <iframe src="header_footer.html" frameborder="0" scrolling="no"></iframe>
+    </header>
 <main>
     <h1>Contato</h1>
     <p>Deixe sua menssagem:</p>
 
     <form action="">
-        <label for="nome">Nome:</label>
-        <input type="text" id="nome" name="nome" required>
+        <label for="nomesobrenome">Nome completo</label>
+        <input type="text" id="nomesobrenome" class="input-geral" required placeholder="Nome completo">
 
-        <label for="email">E-mail:</label>
-        <input type="email" id="email" name="email" required>
+        <label for="email">Email</label>
+        <input type="email" id="email" class="input-geral" required placeholder="seuemail@dominio.com">
 
-        <label for="mensagem">Mensagem:</label>
-        <textarea id="mensagem" name="mensagem" required></textarea>
+        <label for="mensagem">Mensagem</label>
+        <textarea cols="70" rows="10" id="mensagem" class="input-geral" required></textarea>
 
-        <input type="submit" value="Enviar">
+        <label class="checkbox"><input type="checkbox" checked>Gostaria de receber nossas novidades por email?</label>
 
+        <input type="submit" value="Enviar formulário" class="enviar">
     </form>
     
 </main>
+<hr>
+
+<!-- Testei esse footer mais simples pois já tem endereço no cabeçalho.
+     Se preferir, pode retornar o anterior, somente apagar o atual e retirar
+     o de baixo de comentario -->
+
 <footer>
-<iframe src="header_footer.html" frameborder="0" scrolling="no"></iframe>
-    
+    <img src="img/street3-low-resolution-logo-black-on-white-background.png">
+    <br>
+    <br>
+    <p>&copy; Copyright Street 3 - just click to find - 2023</p></a> 
+</footer>
+
+<!--<footer>
+    <iframe src="header_footer.html" frameborder="0" scrolling="no"></iframe>
+</footer>-->
 </body>
 </html>
