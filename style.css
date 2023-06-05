@@ -339,3 +339,9 @@ aside {
     background: #78bfa9;
     transform: scale(1.1);
   }
+
+  .imagem-cidades-rio {
+    width: 800px;
+    height: 800px;
+    margin: 0%;
+  }
