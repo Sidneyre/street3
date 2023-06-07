@@ -378,6 +378,15 @@ aside {
       flex-direction: column;
       align-items: center;
     }
+
+    .informacao-cidades{
+      margin: 15%;
+    }
+    .hero h2 {
+      text-align: center;
+      padding: 3%;
+    }
+
     .informacao-cidades h2, p {
       text-align: center;
       padding: 3%;
@@ -401,7 +410,7 @@ aside {
     .whatsapp-button {
       position: fixed;
       bottom: 20px;
-      left: 20px;
+      white-space: 20px;
       z-index: 2;
       display: block;
     }
@@ -423,6 +432,12 @@ aside {
       align-items: center;
       align-content: center;
     }
-  }
+    .imagem-cidades-minas {
+      width: 330px;
+      height: 330px;
+      align-items: center;
+      align-content: center;
+    }
+  }   
 
 /* Anterior: https://colab.research.google.com/drive/1fMmfE1V5u-ZYlmemS_iT-_SJ-M6QAHec?usp=sharing */
