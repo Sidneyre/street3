@@ -1,57 +1,52 @@
 body {
   background-color: antiquewhite;
-  /* background-image: url(img/praia-fundo.jpg); */
-  
 }
+
 * {
-    margin: 0;
-    padding: 0;
-    
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 .whatsapp-button {
   position: fixed;
   bottom: 20px;
   right: 20px;
-  z-index: 2; /* Define uma ordem de empilhamento maior para o botão do WhatsApp */
+  z-index: 2;
 }
 
 .lista-cidades-sp {
   display: flex;
   flex-direction: column;
-  
 }
 
 .texto-turistico li {
-    word-spacing: -2px;
-    font-family: 'Montserrat', sans-serif;
-    color: #242873;
+  word-spacing: -2px;
+  font-family: 'Montserrat', sans-serif;
+  color: #242873;
 }
-/* AnteriorÇ  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
-figure{
-	opacity: 1;
-	transition: 400ms;
-	box-shadow: 5px 5px 0px 5px #000000
+
+figure {
+  opacity: 1;
+  transition: 400ms;
+  box-shadow: 5px 5px 0px 5px #000000;
 }
 
 .figure-campos-jordao {
   border: rgba(0, 0, 0, 0.1);
-  padding: 7;
-  
-
+  padding: 7px;
 }
 
-.imagem-sao-roque{
-  width: 300;
-  height: 300;
+.imagem-sao-roque {
+  width: 300px;
+  height: 300px;
 }
 
 .informacao-cidades {
- margin-left: 70px;
- margin-top: 20;
- margin-right: 8%;
- display: block;
-
+  margin-left: 70px;
+  margin-top: 20px;
+  margin-right: 8%;
+  display: block;
 }
 
 .aside-cidades-pontos {
@@ -63,20 +58,22 @@ figure{
 .pontos-turisticos {
   padding: 10px;
 }
-.pontos-turisticos {
-    word-spacing: 5px;
-    font-family: 'Montserrat', sans-serif;
-    color: #242873;
+
+.pontos-turisticos li {
+  word-spacing: 5px;
+  font-family: 'Montserrat', sans-serif;
+  color: #242873;
 }
 
 .clima {
   padding: 10px;
 }
 
-.clima p, strong, {
-    word-spacing: 5px;
-    font-family: 'Montserrat', sans-serif;
-    color: #242873;
+.clima p,
+strong {
+  word-spacing: 5px;
+  font-family: 'Montserrat', sans-serif;
+  color: #242873;
 }
 
 .dicas {
@@ -89,7 +86,7 @@ figure{
   color: #242873;
 }
 
-.eventos{
+.eventos {
   padding: 10px;
 }
 
@@ -98,56 +95,53 @@ figure{
   font-family: 'Montserrat', sans-serif;
   color: #242873;
 }
-p {
-    word-spacing: 5px;
-    font-family: 'Montserrat', sans-serif;
-    color: #242873;
 
-  
+p {
+  word-spacing: 5px;
+  font-family: 'Montserrat', sans-serif;
+  color: #242873;
 }
 
 h1 {
-    word-spacing: -2px;
-    font-family: 'Montserrat', sans-serif;
-    color: #242873;
+  word-spacing: -2px;
+  font-family: 'Montserrat', sans-serif;
+  color: #242873;
 }
 
 h2 {
-    word-spacing: -2px;
-    font-family: 'Montserrat', sans-serif;
-    color: #242873;
-    font-size: 24px; 
-    font-weight: bold; 
-    margin-bottom: 20px; 
+  word-spacing: -2px;
+  font-family: 'Montserrat', sans-serif;
+  color: #242873;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
 }
 
 a {
-    text-decoration: none;
-    color: #242873;
-    
+  text-decoration: none;
+  color: #242873;
 }
-
 
 a:hover {
-    background-color:  #f2dfbb;
-}
-.logo {
-    position: relative;
-    width: 90px;
-    margin: 0 auto;
+  background-color: #f2dfbb;
 }
 
-/* Define o elemento como um container flexível e orienta os itens na horizontal */
+.logo {
+  position: relative;
+  width: 90px;
+  margin: 0 auto;
+}
+
 .cabecalho {
-    margin-top: 0;
-    font-family: 'Poppins', sans-serif;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-    width: 100%;
-    height: 50;
-    background-color: #78bfa5
+  margin-top: 0;
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  height: 50px;
+  background-color: #78bfa5;
 }
 
 menu {
@@ -155,53 +149,50 @@ menu {
 }
 
 i#burguer {
-  background:none;
+  background: none;
   color: #242873;
   display: block;
-  text-align: center ;
+  text-align: center;
   padding: 10px;
   cursor: pointer;
-
 }
 
 i#burguer:hover {
   background-color: #f2dfbb;
-  color:#242873;
+  color: #242873;
 }
+
 .text {
-    text-shadow: 10px 15px 7px rgba(0, 0, 0, 0.46), -1px -1px 10px rgba(255,255,255,0.3);
-    color:  #242873;
-    font-size: 32px;
+  text-shadow: 10px 15px 7px rgba(0, 0, 0, 0.46), -1px -1px 10px rgba(255, 255, 255, 0.3);
+  color: #242873;
+  font-size: 32px;
 }
 
 .destaque {
-    text-shadow: 10px 15px 7px rgba(0, 0, 0, 0.46), -1px -1px 10px rgba(255,255,255,0.3);
-    color: #333;
-    font-size: 26px;
-    font-family: 'Foldit', cursive;
+  text-shadow: 10px 15px 7px rgba(0, 0, 0, 0.46), -1px -1px 10px rgba(255, 255, 255, 0.3);
+  color: #333;
+  font-size: 26px;
+  font-family: 'Foldit', cursive;
 }
 
 .hero {
- 
   display: flex;
   justify-content: space-between;
   flex-direction: row;
   position: relative;
   background-color: #f2dfbb;
   border: 0;
-  padding: 70px;
-  margin-top: px; 
+  padding: 5%;
+  margin-top: 20px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  
 }
 
 hr {
-  border: none; 
+  border: none;
   height: 2px;
-  background-color: #242873; 
+  background-color: #242873;
   margin: 20px 0;
 }
-
 
 .titulo-hero {
   font-family: 'Foldit', cursive;
@@ -213,8 +204,6 @@ hr {
   font-family: 'Foldit', cursive;
   font-size: 12px;
   line-height: 150%;
-  
-
 }
 
 .formulario-consulta {
@@ -224,38 +213,33 @@ hr {
 
 form {
   margin: 0;
-  padding: 0px;
+  padding: 0;
 }
 
 .btn-pesquisar {
-  background-color: #242873; 
-  color: #ffffff; 
-  border: none; 
-  border-radius: 5px; 
-  padding: 10px 20px; 
+  background-color: #242873;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
   font-size: 16px;
-  cursor: pointer; 
-
+  cursor: pointer;
 }
 
 .btn-pesquisar:hover {
-  background-color: gray; /* Define a cor de fundo do botão ao passar o mouse */
+  background-color: gray;
 }
 
 .foto-hero {
   max-width: 1200px;
   margin: 0 auto;
   padding: 20px;
-  
-
 }
 
 aside {
   max-width: 1200px;
   margin: 0 auto;
   padding: 20px;
-  
-  
 }
 
 .aside-cidades {
@@ -264,7 +248,6 @@ aside {
   padding: 40px;
   display: flex;
   flex-direction: column;
-
 }
 
 .text-cidades-cidades {
@@ -274,7 +257,7 @@ aside {
 .lista-cidades-cidade {
   display: flex;
   flex-wrap: wrap;
-  justify-content: left;
+  justify-content: flex-start;
   list-style: none;
   padding: 10px;
   margin: 10%;
@@ -302,73 +285,48 @@ aside {
 }
 
 .imagem-cidades {
-  width: 800px;
-  height: 600px;
+  max-width: 100%;
+  height: auto;
 }
 
-  footer {
-    text-align: center;
-    background: #78bfa5; /*url("/img/verde_agua.jpg");*/
-    padding: 40px 0;
-    display: flex;
-    width: 100%;
-    height: 50;
+footer {
+  text-align: center;
+  background: #78bfa5;
+  padding: 40px 0;
+  display: flex;
+  width: 100%;
+  height: 50px;
+  align-items: center;
+  justify-content: center;
+  color: #242873;
+  font-family: 'Foldit', cursive;
+}
+
+footer p {
+  margin: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .hero {
+    flex-direction: column;
     align-items: center;
+  }
+
+  .formulario-consulta {
+    width: 100%;
+  }
+
+  .texto-hero {
+    text-align: center;
+  }
+
+  .aside-cidades {
+    padding: 20px;
+  }
+
+  .lista-cidades-cidade {
     justify-content: center;
-    margin-top: 11.5%;
   }
-  .copyright {
-    color: #FFFFFF;
-    font-size: 13px;
-    margin: 20px 0 0;
-  }
+}
 
-  /*CSS do Copyright*/
-
-  .copyright {
-    color: #0000;
-    font-size: 13px;
-    margin: 20px 0 0;
-  }
-
-  /*CSS da Página de Contato*/
-
-  form {
-    margin: 40px 0;
-  }
-  form label, form legend {
-    display: block;
-    font-size: 20px;
-    margin: 0 0 10px;
-  }
-  .input-padrao {
-    display: block;
-    margin: 0 0 20px;
-    padding: 10px 25 px;
-    width: 50%;
-  }
-  .checkbox {
-    margin: 20px 0;
-  }
-  .enviar {
-    width: 40%;
-    padding: 15px 0;
-    background: #78bfa5;
-    color: white;
-    font-weight: bold;
-    font-size: 18px;
-    border: none;
-    border-radius: 5px;
-    transition: 2s all;
-    cursor: pointer;
-  }
-  .enviar:hover {
-    background: #78bfa9;
-    transform: scale(1.1);
-  }
-
-  .imagem-cidades-rio {
-    width: 800px;
-    height: 800px;
-    margin: 0%;
-  }
+/* Anterior: https://colab.research.google.com/drive/1fMmfE1V5u-ZYlmemS_iT-_SJ-M6QAHec?usp=sharing */
