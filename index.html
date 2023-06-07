@@ -67,13 +67,14 @@
                     <h1><strong> Escreva o nome da cidade:</strong></h1>
           
                     <div class="fomulario-consulta">
-                    <form action="">
+                    <form action="/error.html">
                     <label for="Cidade"><h1> Cidade:</h1> </label>
                     <input type="text" name="cidade" id="cidade">
-                    </form>
+                    
                     <button type="submit" class="btn-pesquisar">
                         <i class="fa fa-search"></i> Pesquisar
                       </button>
+                    </form>
 
                       
 
@@ -87,11 +88,12 @@
       </figure>      
         <hr>
         <h1>selecione o estado:</h1>
-        <select class="seletor-hero">
+        <select class="seletor-hero" id="seletor-hero">
           <option value="/minas-gerais/cidade-minas.html">Pontos turísticos - Minas Gerais</option>
           <option value="/rio-de-janeiro/rio-de-janeiro.html">Pontos turísticos - Rio de Janeiro</option>
           <option value="/sao-paulo/cidade-sao-paulo.html">Pontos Turisticos - São Paulo</option>
         </select>
+        <button class="btn-pesquisar" onclick="redirecionar()">Ir para a página</button>
         </aside>
 		</main>
 

@@ -9,6 +9,18 @@ body {
     
 }
 
+.lista-cidades-sp {
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.texto-turistico li {
+    word-spacing: -2px;
+    font-family: 'Montserrat', sans-serif;
+    color: #242873;
+}
+
 figure{
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
@@ -18,6 +30,11 @@ figure{
   padding: 7;
   
 
+}
+
+.imagem-sao-roque{
+  width: 300;
+  height: 300;
 }
 
 .informacao-cidades {
