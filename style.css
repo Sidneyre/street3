@@ -9,6 +9,13 @@ body {
     
 }
 
+.whatsapp-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 2; /* Define uma ordem de empilhamento maior para o botão do WhatsApp */
+}
+
 .lista-cidades-sp {
   display: flex;
   flex-direction: column;
@@ -20,9 +27,11 @@ body {
     font-family: 'Montserrat', sans-serif;
     color: #242873;
 }
-
+/* AnteriorÇ  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
 figure{
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	opacity: 1;
+	transition: 400ms;
+	box-shadow: 5px 5px 0px 5px #000000
 }
 
 .figure-campos-jordao {
