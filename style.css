@@ -405,5 +405,18 @@ aside {
       z-index: 2;
       display: block;
     }
+    .imagem-cidades {
+      width: 368px;
+      height: 368px;
+      align-items: center;
+      align-content: center;
     }
+    .imagem-sao-roque{
+      width: 330px;
+      height: 330px;
+      align-items: center;
+      align-content: center;
+    }
+    }
+
 /* Anterior: https://colab.research.google.com/drive/1fMmfE1V5u-ZYlmemS_iT-_SJ-M6QAHec?usp=sharing */
