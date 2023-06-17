@@ -31,7 +31,7 @@ body {
 figure{
 	opacity: 1;
 	transition: 400ms;
-	box-shadow: 5px 5px 0px 5px #000000
+	
 }
 
 .figure-campos-jordao {
@@ -73,11 +73,11 @@ figure{
   padding: 10px;
 }
 
-.clima p, strong, {
+/* .clima p, strong, {
     word-spacing: 5px;
     font-family: 'Montserrat', sans-serif;
     color: #242873;
-}
+} */
 
 .dicas {
   padding: 10px;
@@ -374,6 +374,12 @@ aside {
   }
 
   @media screen and (max-width: 768px) {
+    .slick {
+      width: 330px;
+      height: 330px;
+      align-items: center;
+      align-content: center;
+    }
     .hero {
       flex-direction: column;
       align-items: center;
@@ -441,3 +447,7 @@ aside {
   }   
 
 /* Anterior: https://colab.research.google.com/drive/1fMmfE1V5u-ZYlmemS_iT-_SJ-M6QAHec?usp=sharing */
+
+
+/* regras slick */
+
