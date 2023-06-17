@@ -1,20 +1,18 @@
-function clickMenu(){
-    if (items.style.display == 'block') {
-        items.style.display = 'none'
+function clickMenu() {
+    if (itens.style.display == 'block'){
+        itens.style.display = 'none'
+    } else {
+      itens.style.display = 'block'
     }
-    else {
-      items.style.display = 'block'
-    }
-  }
+}
 
 
-  function redirecionar( ) {
-    let select = document.getElementById("seletor-hero");
-    let selectedOption = select.options[select.selectedIndex];
-    let url = selectedOption.value;
-    window.location.href = url;
-  }
 
+function redirecionar() {
+  var selectElement = document.getElementById('seletor-hero');
+  var selectedValue = selectElement.value;
+  window.location.href = selectedValue;
+}
 
 $(document).ready(function(){
   $('.slick').slick({
@@ -25,3 +23,5 @@ $(document).ready(function(){
   dots: true
   });
 });
+
+let element = document.getElementById =('itens');

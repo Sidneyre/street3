@@ -9,7 +9,12 @@
   <link rel="stylesheet" href="style.css">
 
   <link rel="shortcut icon" type="image/x-icon" href="assets/fav.png">
-
+  <!-- icon location -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <!-- incon phone -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <!-- key open -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
@@ -20,21 +25,28 @@
 </head>
 <body>
   <header>
-    <nav class="cabecalho">
-      <figure>
+      <figure class="logo">
         <a href="/index.html" target="_parent">
-          <h1><img class="logo" src="/img/STREET.png" alt="logo"></h1>
+          <h1><img  src="/img/STREET.png" alt="logo"></h1>
         </a>
       </figure>
-      <ul class="lista-endereco">
-        <li><p>Av. Dr. Moraes Salles, 711 - Nova Campinas, Campinas - SP</p></li>
-      </ul>
-      <ul class="contato-cabecalho">
-        <li><p>Telefone:</p></li>
-        <li><p>+55 19 98442-6422</p></li>
-      </ul>
+      <div class="lista-endereco">
+      <ul>
+        <a href="https://www.google.com/search?q=Av.+Dr.+Moraes+Salles%2C+711+-+Nova+Campinas%2C+Campinas+-+SP&amp;oq=Av.+Dr.+Moraes+Salles%2C+711+-+Nova+Campinas%2C+Campinas+-+SP&amp;aqs=chrome..69i57.190j0j7&amp;sourceid=chrome&amp;ie=UTF-8#" class="location-link">
+          <span class="material-symbols-outlined">location_on</span>
+          <p>Av. Dr. Moraes Salles, 711 - Nova Campinas, Campinas - SP</p>
+        </a>
+              </ul>
+    </div>
+    <div class="contato-cabecalho">
+    <span class="material-symbols-outlined">
+      call
+      </span>
+    
+        <p>Telefone +55 19 98442-6422</p>
+    </div>
 
-      <i id="burguer" class="material-symbols-outlined" onclick="clickMenu()">menu</i>
+      <!-- <i id="burguer" class="material-symbols-outlined" onclick="clickMenu()">menu</i>
       <menu id="items">
         <ul class="links-cabecalho">
           <li><p><a href="/minas-gerais/cidade-minas.html" target="_parent">Pontos turísticos - Minas Gerais</a></p></li>
@@ -42,12 +54,24 @@
           <li><p><a href="/sao-paulo/cidade-sao-paulo.html" target="_parent">Pontos Turísticos - São Paulo</a></p></li>
           <li><p><a href="/contato.html" target="_parent">Fale conosco</a></p></li>
         </ul>
-      </menu>
-    </nav>
+      </menu> -->
   </header>
 
-  <main class="hero">
-    <section>
+  <main >
+    <span id="arrow" class="material-symbols-outlined" onclick="clickMenu()">
+      arrow_drop_down
+      </span>
+      <menu id="itens" class="itens-menu" >
+    <select class="seletor-hero" id="seletor-hero" onclick="redirecionar()">
+      <option value="">Selecione o Estado</option>
+      <option value="/minas-gerais/cidade-minas.html">Pontos turísticos - Minas Gerais</option>
+      <option value="/rio-de-janeiro/rio-de-janeiro.html">Pontos turísticos - Rio de Janeiro</option>
+      <option value="/sao-paulo/cidade-sao-paulo.html">Pontos Turisticos - São Paulo</option>
+    </select >
+    </div>
+    </menu>
+    <section class="hero">
+      <section>
       <div>
         <span class="titulo-hero">
           <h2><strong>Pontos Turisticos</strong></h2>
@@ -81,14 +105,9 @@
         <img class="foto-hero" src="img/atracoes-rio-de-janeiro-cristo.jpg" alt="pontos-turisticos">
       </figure>
       <hr> -->
-      <h1>Selecione o estado:</h1>
-      <select class="seletor-hero" id="seletor-hero">
-        <option value="/minas-gerais/cidade-minas.html">Pontos turísticos - Minas Gerais</option>
-        <option value="/rio-de-janeiro/rio-de-janeiro.html">Pontos turísticos - Rio de Janeiro</option>
-        <option value="/sao-paulo/cidade-sao-paulo.html">Pontos Turisticos - São Paulo</option>
-      </select>
-      <button class="btn-pesquisar" onclick="redirecionar()">Ir para a página</button>
+    
     </aside>
+    </section>
   </main>
 
   <footer>
