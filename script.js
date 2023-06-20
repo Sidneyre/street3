@@ -1,3 +1,5 @@
+let element = document.getElementById =('itens');
+
 function clickMenu() {
     if (itens.style.display == 'block'){
         itens.style.display = 'none'
@@ -7,16 +9,15 @@ function clickMenu() {
 }
 
 
-
-function redirecionar() {
-  var selectElement = document.getElementById('seletor-hero');
-  var selectedValue = selectElement.value;
-  window.location.href = selectedValue;
-}
+// function redirecionar() {
+//   var selectElement = document.getElementById('seletor-hero');
+//   var selectedValue = selectElement.value;
+//   window.location.href = selectedValue;
+// }
 
 $(document).ready(function(){
   $('.slick').slick({
-    slidesToShow: 1,
+  slidesToShow: 1,
   slidesToScroll: 1,
   autoplay: true,
   autoplaySpeed: 2000,
@@ -24,4 +25,7 @@ $(document).ready(function(){
   });
 });
 
-let element = document.getElementById =('itens');
+
+$(document).ready(function(){
+  $('.slick').slick();
+});

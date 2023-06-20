@@ -1,8 +1,8 @@
 body {
-  background-color: antiquewhite;
-  /* background-image: url(/images-ia/background-ia2.png);
+  background-image: url(/images-ia/kawe.jpg);
   background-repeat: no-repeat;
-  background-size: cover; */
+  background-size: cover;
+  overflow-x:hidden ;
 }
 * {
     margin: 0;
@@ -113,14 +113,7 @@ h1 {
     color: #242873;
 }
 
-h2 {
-    word-spacing: -2px;
-    font-family: 'Montserrat', sans-serif;
-    color: #242873;
-    font-size: 24px; 
-    font-weight: bold; 
-    margin-bottom: 20px; 
-}
+
 
 a {
     text-decoration: none;
@@ -133,19 +126,7 @@ a:hover {
     background-color:  #f2dfbb;
     border-radius: 16px;
 }
-header {
-  font-family: 'Poppins', sans-serif;
-  font-size: 22px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  background-color: #78bfa5;
-  flex-wrap: wrap;
-  align-items: center;
-  margin: 0 auto;
-	border: 1px solid #ecd5a9
-  
-}
+
 
 header p:hover{
   background-color: #ecd5a9;
@@ -153,13 +134,11 @@ header p:hover{
 }
 
 .logo {
-    left: 70px;
-    top: 0;
-    margin-left: 70px;
+  
 }
 .logo img{
-  width: 100px;
-  height: 100px;
+  width: 60px;
+  height: 60px;
 }
 
 .location-link {
@@ -167,20 +146,6 @@ header p:hover{
   align-items: center;
 }
 
-.material-symbols-outlined {
-  margin-right: 5px;
-}
-
-.contato-cabecalho{
-  margin-right: 70px;
-  display: flex;
-  align-items: center;
-  pointer-events: none;
-}
-
-menu {
-  display: none;
-}
 
 i#burguer {
   background:none;
@@ -209,21 +174,6 @@ i#burguer:hover {
     font-family: 'Foldit', cursive;
 }
 
-.hero {
- 
-  display: flex;
-  /* justify-content: space-between; */
-  flex-direction: row;
-  position: relative;
-  background-color: #ecd5a9;
-  background-size: cover;
-  opacity: 0.95;
-  border: 0;
-  padding: 70px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  max-width:100%;
-  padding: 20px;
-}
 
 hr {
   border: none; 
@@ -233,19 +183,6 @@ hr {
 }
 
 
-.titulo-hero {
-  font-family: 'Foldit', cursive;
-  font-size: 28px;
-}
-
-.texto-hero {
-  margin: 2px;
-  font-family: 'Foldit', cursive;
-  font-size: 12px;
-  line-height: 150%;
-  
-
-}
 
 .formulario-consulta {
   padding: 0;
@@ -255,21 +192,6 @@ hr {
 form {
   margin: 0;
   padding: 0px;
-}
-
-.btn-pesquisar {
-  background-color: #242873; 
-  color: #ffffff; 
-  border: none; 
-  border-radius: 5px; 
-  padding: 10px 20px; 
-  font-size: 16px;
-  cursor: pointer; 
-
-}
-
-.btn-pesquisar:hover {
-  background-color: gray; /* Define a cor de fundo do botão ao passar o mouse */
 }
 
 .foto-hero {
@@ -337,20 +259,20 @@ aside {
 }
 
   footer {
-    text-align: center;
-    background: #78bfa5; /*url("/img/verde_agua.jpg");*/
-    padding: 40px 0;
     display: flex;
-    width: 100%;
-    height: 50;
     align-items: center;
     justify-content: center;
-    margin-top: 11.5%;
+    position: absolute;
+    bottom: 10px;
+    background-color: #78bfa5;
+    width: 100%;
+    height: 55px;    
   }
   .copyright {
     color: #FFFFFF;
     font-size: 13px;
     margin: 20px 0 0;
+    bottom: 0;
   }
 
   /*CSS do Copyright*/
@@ -478,38 +400,10 @@ aside {
 
 /* Anterior: https://colab.research.google.com/drive/1fMmfE1V5u-ZYlmemS_iT-_SJ-M6QAHec?usp=sharing */
 
-/* icon location */
-.material-symbols-outlined {
-  color: #242873;
-  font-variation-settings:
-  'FILL' 0,
-  'wght' 300,
-  'GRAD' 0,
-  'opsz' 24
-}
-
-/* incon phone */
-.material-symbols-outlined {
-  color: #242873;
-  font-variation-settings:
-  'FILL' 0,
-  'wght' 300,
-  'GRAD' 0,
-  'opsz' 24
-}
 /* regras slick */
 
 .slick {
   
-}
-/* key open */
-
-.material-symbols-outlined {
-  font-variation-settings:
-  'FILL' 0,
-  'wght' 400,
-  'GRAD' 0,
-  'opsz' 48
 }
 
 span#arrow {
@@ -521,6 +415,9 @@ span#arrow {
   padding: 10px;
   cursor: pointer;
   max-width:100%;
+  width: 100%;
+  position: relative;
+  z-index: 999;
 }
 span#arrow:hover {
   background-color: #7daf9c;
@@ -531,4 +428,140 @@ span#arrow:hover {
 .itens-menu{
   display: flex;
   background-color: #ecd5a9;
+  
+}
+
+/* ========================================================= */
+
+.header-top {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.lista-endereco-contato{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-content: center;
+  background-color: #78bfa5;
+  padding-left: 70px;
+  padding-right: 70px;
+}
+
+.contato-cabecalho{
+  display: flex;
+  align-items: center;
+  color: #242873;
+
+ 
+}
+
+.endereco{
+  display: flex;
+  align-items: center;
+}
+
+.nav-index{
+  display: flex;
+  justify-content: center;
+  height: 7vh;
+  background-color: #ecd5a9;
+  border-radius: 10px;
+  transition: max-height 1ms ease;
+  margin-left:100px ;
+  margin-right: 100px;
+  border-style: outset;
+  border-width: 3px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  position: absolute;
+  top: 77px;
+  left: 20vh;
+  width: 70%;
+  padding: 10px;
+  z-index: 1;
+}
+
+.material-symbols-outlined{
+  z-index: 2;
+}
+
+.button-header{
+  display: flex;
+  justify-content: center;
+  background-color: #78bfa5;
+  border-radius: 10px;
+  height: 10px;
+  position: relative;
+  color: #242873;
+}
+
+menu {
+  display: none;
+}
+
+.btn-pesquisar {
+  background-color: #242873; 
+  color: #ffffff; 
+  border: none; 
+  border-radius: 5px; 
+  padding: 10px 20px; 
+  font-size: 14px;
+  cursor: pointer;
+  height: 6vh; 
+
+}
+
+.btn-pesquisar:hover {
+  background-color: gray; /* Define a cor de fundo do botão ao passar o mouse */
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(5,1fr);
+  gap: 20px;
+}
+
+
+.hero {
+ 
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  position: relative;
+  background-color: #ecd5a9;
+  background-size: cover;
+  opacity: 0.95;
+  border: 0;
+  padding-left: 70px;
+  padding-right: 70px;
+  max-width:100%;
+
+}
+
+.hero-in{
+  display: flex;
+  flex-direction: column;
+  margin: 10vh;
+}
+
+.titulo-hero {
+  font-size: 20px;
+  word-spacing: 10px;
+  font-family: 'Montserrat';
+  color: #242873; 
+  font-weight: bold;
+  margin: 10px;
+  
+}
+
+.texto-hero {
+  align-items: start;
+  word-spacing: 2px;
+  font-weight: lighter;
+  margin: 20px;
+  font-family: 'Montserrat',cursive;
+  font-size: 13px;
+  line-height: 150%;
+  
+
 }
