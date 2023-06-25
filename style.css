@@ -28,12 +28,6 @@ body {
     font-family: 'Montserrat', sans-serif;
     color: #242873;
 }
-/* AnteriorÇ  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
-figure{
-	opacity: 1;
-	transition: 400ms;
-	
-}
 
 .figure-campos-jordao {
   border: rgba(0, 0, 0, 0.1);
@@ -73,12 +67,6 @@ figure{
 .clima {
   padding: 10px;
 }
-
-/* .clima p, strong, {
-    word-spacing: 5px;
-    font-family: 'Montserrat', sans-serif;
-    color: #242873;
-} */
 
 .dicas {
   padding: 10px;
@@ -122,20 +110,11 @@ a {
 }
 
 
-a:hover {
-    background-color:  #f2dfbb;
-    border-radius: 16px;
-}
-
-
 header p:hover{
   background-color: #ecd5a9;
   transition: all;
 }
 
-.logo {
-  
-}
 .logo img{
   width: 60px;
   height: 60px;
@@ -202,13 +181,6 @@ form {
 
 }
 
-aside {
-  max-width:50%;
-  margin: 0 auto;
-  padding: 20px;
-  
-  
-}
 
 .aside-cidades {
   max-width: 1200px;
@@ -221,36 +193,6 @@ aside {
 
 .text-cidades-cidades {
   margin: 10%;
-}
-
-.lista-cidades-cidade {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: left;
-  list-style: none;
-  padding: 10px;
-  margin: 10%;
-}
-
-.lista-cidades-cidade li {
-  display: flex;
-  align-items: center;
-  margin-bottom: 10px;
-}
-
-.lista-cidades-cidade li a {
-  display: flex;
-  align-items: center;
-  flex-grow: 1;
-  text-decoration: none;
-}
-
-.lista-cidades-cidade li a h2 {
-  margin-right: 10px;
-}
-
-.lista-cidades-cidade li a .btn-pesquisar {
-  margin-left: auto;
 }
 
 .imagem-cidades {
@@ -308,12 +250,6 @@ aside {
   .enviar:hover {
     background: #78bfa9;
     transform: scale(1.1);
-  }
-
-  .imagem-cidades-rio {
-    width: 800px;
-    height: 800px;
-    margin: 0%;
   }
 
   @media screen and (max-width: 768px) {
@@ -494,9 +430,8 @@ menu {
 .btn-pesquisar {
   background-color: #242873; 
   color: #ffffff; 
-  border: none; 
   border-radius: 5px; 
-  padding: 10px 20px; 
+  padding: 10px;
   font-size: 14px;
   cursor: pointer;
   height: 6vh; 
@@ -505,6 +440,7 @@ menu {
 
 .btn-pesquisar:hover {
   background-color: gray; /* Define a cor de fundo do botão ao passar o mouse */
+  border: 1px solid #78bfa5;
 }
 
 .grid {
@@ -612,4 +548,132 @@ footer {
   color: #242873;
 }
 
+/* 25/06 ================================ */
 
+.container-hero{
+  display: flex;
+  padding:0;
+  align-content: space-around
+}
+
+.half-hero{
+  height: 60vh;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  margin-top: 20px;
+  width:auto;
+  
+}
+
+.carousel-cidades{
+  overflow: hidden;
+  width: 100%;
+  margin-right: px;
+  border-radius: 30px;
+  padding: 2px;
+  border-color: 8px solid transparent;
+}
+
+.title-cidades{
+  background-color: #78bfa5;
+  border-radius: 20px;
+  color: #242873;
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  font-family: 'Montserrat', sans-serif;
+  width: 30vh;
+  padding: 10px;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.half-hero2{
+  height: 60vh;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  margin-left: 50px;
+  width: 100vh;
+}
+
+.title-cidades2{
+  background-color: #78bfa5;
+  border-radius: 20px;
+  color: #242873;
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
+  width: 30vh;
+  font-size: 1rem;
+}
+
+.texto{
+  width: 700px;
+  text-align: center;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  display: flex;
+  background-color: #7daf9c;
+  border-radius: 20px;
+  padding: 10px;
+  margin-top: 40px;
+}
+
+.lista-cidades-cidade{
+  border-radius: 20px;
+  width: 700px;
+  margin-top: 50px;;
+  justify-content: first baseline;
+  display: flex;
+  height: 200px;
+  align-items: center;
+}
+
+.li-cidades{
+  display: flex;
+  flex-direction: column;
+}
+
+.li-cidades li {
+  margin: 10px;
+  font-size: 32px;
+  font-style: oblique;
+}
+
+.lista-cidades li:hover {
+  color: #242873;
+  text-decoration: none;
+  background-color: #78bfa5;
+}
+
+.anti-footer{
+  background-color: #78bfa5;
+  border-bottom: 1px solid #ecd5a9;
+  display: flex;
+  justify-content: center;
+  height: 50px;
+  align-items: center;
+}
+
+.carousel-index{
+  width: 700px;
+  height: 2px;
+  margin-top: 80px;
+  margin-bottom: 20px;
+}
+
+#btn-cadastro{
+  padding: 0 40px 0 40px;
+}
+
+#btn-sobre{
+  padding: 0 40px 0 40px;
+}
