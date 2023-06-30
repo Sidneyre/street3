@@ -677,3 +677,110 @@ footer {
 #btn-sobre{
   padding: 0 40px 0 40px;
 }
+
+.content{
+  background-color: #78bfa5;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.2), 0 1px 5px 0 rgba(0,0,0,0.12);
+  margin-top: 0;
+  width: 150px;
+  align-items: center;
+  align-content: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  font-size: large;
+  overflow: hidden;
+  word-wrap: normal;
+}
+
+.form-cadastro {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  background-color: #7daf9c;
+  border-radius: 16px;
+  padding: 1.5rem 40px;
+  opacity: 1;
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+label {
+  margin-bottom: .2rem;
+  position: relative;
+}
+
+label:not(:first-of-type){
+  margin-top: 1rem;
+}
+
+input {
+  padding: .2rem .5rem;
+  border-radius: 5px;
+}
+
+.helper-text {
+  display: none;
+  font-size: .8rem;
+  color: darkred;
+}
+
+#btnCadastro {
+  width: 100px;
+  height: 40px;
+  margin-top: 1.5rem;
+  font-size: 1rem;
+  align-self: center;
+  border-radius: 12px;
+  background-color: #242873 ;
+  color: #ecd5a9;
+}
+
+/* ---------- Estilos dinâmicos ---------- */
+.required-popup::after {
+  content: "*Campo obrigatório";
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: #DFDFDF;
+  font-size: .65rem;
+  padding: .2rem .3rem;
+  width: auto;
+  display: block;
+  background-color: #202020;
+}
+
+input.error {
+  border: solid 2px #992020;
+  background-color: #CCBBBB;
+  color: #662020;
+}
+
+input.correct {
+  background-color: #BBCCBB;
+  border: solid 2px #206620;
+  color: #206620;
+}
+
+.visible {
+  display: block;
+}
+
+.container-cadastro{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  height: 800px;
+  background-color: #ecd5a9;
+  opacity: 0.8;
+  color: #242873;
+  font-family: 'Montserrat', sans-serif;;
+}
