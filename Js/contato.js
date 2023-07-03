@@ -95,23 +95,23 @@ let emailHelperText = document.getElementById('email-helper')
 
 mostrar_poupup(emailInput,emailLabel);
 
-emailInput.addEventListener("change", function teste(evento){
-    let valor = evento.target.value;
+// emailInput.addEventListener("change", function teste(evento){
+//     let valor = evento.target.value;
 
-    if (valor.includes("@") && valor.includes(".com")){
-        //estilos
-        emailInput.classList.remove('correct')
-        emailHelperText.classList.remove('visible')
-        emailInput.classList.add('correct')
-    } else {
-        emailInput.classList.remove('correct')
-        emailInput.classList.add('error')
-        emailHelperText.innerText = 'Email invalido'
-        emailHelperText.classList.add('visible')
-    }
+//     if (valor.includes("@") && valor.includes(".com")){
+//         //estilos
+//         emailInput.classList.remove('correct')
+//         emailHelperText.classList.remove('visible')
+//         emailInput.classList.add('correct')
+//     } else {
+//         emailInput.classList.remove('correct')
+//         emailInput.classList.add('error')
+//         emailHelperText.innerText = 'Email invalido'
+//         emailHelperText.classList.add('visible')
+//     }
 
-    return true
-});
+//     return true
+// });
 
 // let teste123 = teste();
 
@@ -129,3 +129,48 @@ emailInput.addEventListener("change", function teste(evento){
 //     }
 // }
 // );
+
+let emailInput = document.querySelector('#emailInput');
+let emailHelperText = document.querySelector('#emailHelperText');
+let btnCadastro = document.querySelector('#btnCadastro');
+
+emailInput.addEventListener("change", function(evento) {
+    let valor = evento.target.value;
+
+    if (valor.includes("@") && valor.includes(".com")) {
+        // Estilos para email válido
+        emailInput.classList.remove('error');
+        emailHelperText.classList.remove('visible');
+        emailInput.classList.add('correct');
+    } else {
+        // Estilos para email inválido
+        emailInput.classList.remove('correct');
+        emailInput.classList.add('error');
+        emailHelperText.innerText = 'Email inválido';
+        emailHelperText.classList.add('visible');
+    }
+});
+
+btnCadastro.addEventListener('click', function(evento) {
+    let valor = emailInput.value;
+    if (valor) {
+        // Lógica de cadastro aqui
+    } else {
+        evento.preventDefault();
+        alert('O campo de email está vazio. Preencha-o antes de prosseguir.');
+    }
+});
+
+
+
+// menu suspenso headers
+
+let element = document.getElementById =('itens');
+
+function clickMenu() {
+    if (itens.style.display == 'block'){
+        itens.style.display = 'none'
+    } else {
+      itens.style.display = 'block'
+    }
+}

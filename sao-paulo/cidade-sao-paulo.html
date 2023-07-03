@@ -33,7 +33,8 @@
 	  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
 	  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
 	  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>	
-	  <script src="/script.js" defer></script>
+	  <!-- <script src="/script.js" defer></script> -->
+	  
 
     
 </head>
@@ -75,15 +76,6 @@
 				<a href="#"><button id="btn-sobre" type="submit" class="btn-pesquisar">Sobre nós</button></a>
 			</div>
 		</menu>
-		  <!-- <i id="burguer" class="material-symbols-outlined" onclick="clickMenu()">menu</i>
-		  <menu id="items">
-			<ul class="links-cabecalho">
-			  <li><p><a href="/minas-gerais/cidade-minas.html" target="_parent">Pontos turísticos - Minas Gerais</a></p></li>
-			  <li><p><a href="/rio-de-janeiro/rio-de-janeiro.html" target="_parent">Pontos turísticos - Rio de Janeiro</a></p></li>
-			  <li><p><a href="/sao-paulo/cidade-sao-paulo.html" target="_parent">Pontos Turísticos - São Paulo</a></p></li>
-			  <li><p><a href="/contato.html" target="_parent">Fale conosco</a></p></li>
-			</ul>
-		  </menu> -->
 		</section>
 	</header>
 	<main>
@@ -107,27 +99,11 @@
 					
 						</div>
 					
-                    <div class="lista-cidades-cidade">
-					<ul class="li-cidades">
-						<li>
-						  <a href="/sao-paulo/campos-do-jordao.html">
-							<h2>Campos do Jordão</h2>
-
-						  </a>
-						</li>
-						<li>
-						  <a href="/sao-paulo/holambra.html">
-							<h2>holambra</h2>
-						  </a>
-						</li>
-						<li>
-						  <a href="/sao-paulo/sao-roque.html">
-							<h2>São Roque</h2>
-							</button>
-						  </a>
-						</li>
-					  </ul>
-					</div>
+						<div class="div-dinamicas">
+							<button class="btn-pesquisar " onclick="criarDiv('proximo')">Próximo</button>
+							<button class="btn-pesquisar " onclick="criarDiv('anterior')">Anterior</button>
+							</div>
+							<div id="container"></div>
 					</div>
 			</div>
 		</section>
@@ -138,5 +114,6 @@
 	<footer>
         <p>&copy; Copyright Street 3 - Todos os direitos reservados - 2023</p></a> 
     </footer>
+	<script src="/Js/sp.js"></script>
 </body>
 </html>
