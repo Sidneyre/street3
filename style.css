@@ -208,14 +208,6 @@ form {
     bottom: 0;
   }
 
-  /*CSS do Copyright*/
-
-  /* .copyright {
-    color: #0000;
-    font-size: 13px;
-    margin: 20px 0 0;
-  } */
-
   /*CSS da Página de Contato*/
 
   form {
@@ -251,79 +243,6 @@ form {
     background: #78bfa9;
     transform: scale(1.1);
   }
-
-  @media screen and (max-width: 768px) {
-    .slick {
-      width: 330px;
-      height: 330px;
-      align-items: center;
-      align-content: center;
-    }
-    .hero {
-      flex-direction: column;
-      align-items: center;
-    }
-
-    .informacao-cidades{
-      margin: 15%;
-    }
-    .hero h2 {
-      text-align: center;
-      padding: 3%;
-    }
-
-    .informacao-cidades h2, p {
-      text-align: center;
-      padding: 3%;
-
-    }
-    .formulario-consulta {
-      width: 100%;
-    }
-  
-    .texto-hero {
-      text-align: center;
-    }
-  
-    .aside-cidades {
-      padding: 20px;
-    }
-  
-    .lista-cidades-cidade {
-      justify-content: center;
-    }
-    .whatsapp-button {
-      position: fixed;
-      bottom: 20px;
-      white-space: 20px;
-      z-index: 2;
-      display: block;
-    }
-    .imagem-cidades {
-      width: 368px;
-      height: 368px;
-      align-items: center;
-      align-content: center;
-    }
-    .imagem-sao-roque{
-      width: 330px;
-      height: 330px;
-      align-items: center;
-      align-content: center;
-    }
-    .imagem-cidades-rio {
-      width: 330px;
-      height: 330px;
-      align-items: center;
-      align-content: center;
-    }
-    .imagem-cidades-minas {
-      width: 330px;
-      height: 330px;
-      align-items: center;
-      align-content: center;
-    }
-  }   
 
 /* Anterior: https://colab.research.google.com/drive/1fMmfE1V5u-ZYlmemS_iT-_SJ-M6QAHec?usp=sharing */
 
@@ -391,6 +310,7 @@ span#arrow:hover {
 .nav-index{
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   height: 7vh;
   background-color: #ecd5a9;
   border-radius: 10px;
@@ -596,6 +516,7 @@ footer {
   position: relative;
   flex-direction: column;
   align-items: center;
+  justify-content: space-between;
   margin-top: 20px;
   margin-left: 50px;
   width: 100vh;
@@ -617,7 +538,7 @@ footer {
 }
 
 .texto{
-  width: 700px;
+  width: 500px;
   text-align: center;
   align-items: center;
   align-content: center;
@@ -819,4 +740,126 @@ input.correct {
 .imagem-cidades-rio{
   width: 80%;
   border-radius: 12px;
+}
+.menu-container {
+  display: flex;
+  justify-content: center;
+}
+
+
+@media screen and (max-width: 768px) {
+
+  .header-top .lista-endereco-contato {
+    flex-direction:column;
+    text-align: center;
+    align-items: center;
+  }
+  body {
+    background-image: none
+  }
+  .nav-index .grid .a{
+    flex-direction:column;
+  }
+  .hero{
+    flex-direction:column;
+    align-items: center;
+    padding: 0%;
+  }
+  .carousel-index{
+    flex-direction: column;
+  }
+  .carousel-index .slick{
+    margin: 0 auto;
+  }
+  .informacao-cidades{
+    margin: 15%;
+  }
+  .hero h2 {
+    text-align: center;
+    padding: 3%;
+  }
+  .informacao-cidades h2, p {
+    text-align: center;
+    padding: 3%;
+
+  }
+  .formulario-consulta {
+    width: 100%;
+  }
+
+  .texto-hero {
+    text-align: center;
+  }
+
+  .aside-cidades {
+    padding: 20px;
+  }
+
+  .lista-cidades-cidade {
+    justify-content: center;
+  }
+  .imagem-cidades {
+    width: 368px;
+    height: 368px;
+    align-items: center;
+    align-content: center;
+  }
+  .imagem-sao-roque{
+    width: 330px;
+    height: 330px;
+    align-items: center;
+    align-content: center;
+  }
+  .imagem-cidades-rio {
+    width: 330px;
+    height: 330px;
+    align-items: center;
+    align-content: center;
+  }
+  .imagem-cidades-minas {
+    width: 330px;
+    height: 330px;
+    align-items: center;
+    align-content: center;
+  }
+  .container-hero {
+    flex-direction:column;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+    padding: 0%;
+  }
+  .texto{
+    margin: 5px;
+    border-radius: 10%;
+    margin: 0 auto;
+  }
+  .half-hero{
+    align-items: center;
+    margin: 0 auto;
+  }
+  .div-dinamicas{
+    justify-content: space-between;
+    margin: 10%;
+  }
+  .whatsapp-button {
+    position: fixed;
+    bottom: 20px;
+    left: 63px;
+    z-index: 2;
+  } }
+@media screen and (max-width: 1181px) {
+  .hero{
+    flex-direction:column;
+    padding: 0%;
+    align-items: center;
+  }
+  body{
+    background-image: none;
+    background-color: #ecd5a9;
+  }
+  .nav-index .grid {
+    align-items: center;
+    flex-direction:column;
+  }
 }

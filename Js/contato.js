@@ -95,23 +95,23 @@ let emailHelperText = document.getElementById('email-helper')
 
 mostrar_poupup(emailInput,emailLabel);
 
-// emailInput.addEventListener("change", function teste(evento){
-//     let valor = evento.target.value;
+emailInput.addEventListener("change", function teste(evento){
+    let valor = evento.target.value;
 
-//     if (valor.includes("@") && valor.includes(".com")){
-//         //estilos
-//         emailInput.classList.remove('correct')
-//         emailHelperText.classList.remove('visible')
-//         emailInput.classList.add('correct')
-//     } else {
-//         emailInput.classList.remove('correct')
-//         emailInput.classList.add('error')
-//         emailHelperText.innerText = 'Email invalido'
-//         emailHelperText.classList.add('visible')
-//     }
+    if (valor.includes("@") && valor.includes(".com")){
+        //estilos
+        emailInput.classList.remove('correct')
+        emailHelperText.classList.remove('visible')
+        emailInput.classList.add('correct')
+    } else {
+        emailInput.classList.remove('correct')
+        emailInput.classList.add('error')
+        emailHelperText.innerText = 'Email invalido'
+        emailHelperText.classList.add('visible')
+    }
 
-//     return true
-// });
+    return true
+});
 
 // let teste123 = teste();
 
@@ -130,42 +130,47 @@ mostrar_poupup(emailInput,emailLabel);
 // }
 // );
 
-let emailInput = document.querySelector('#emailInput');
-let emailHelperText = document.querySelector('#emailHelperText');
-let btnCadastro = document.querySelector('#btnCadastro');
+// let emailInput = document.querySelector('#emailInput');
+// let emailHelperText = document.querySelector('#emailHelperText');
+// let btnCadastro = document.querySelector('#btnCadastro');
 
-emailInput.addEventListener("change", function(evento) {
-    let valor = evento.target.value;
+// emailInput.addEventListener("change", function(evento) {
+//     let valor = evento.target.value;
 
-    if (valor.includes("@") && valor.includes(".com")) {
-        // Estilos para email válido
-        emailInput.classList.remove('error');
-        emailHelperText.classList.remove('visible');
-        emailInput.classList.add('correct');
-    } else {
-        // Estilos para email inválido
-        emailInput.classList.remove('correct');
-        emailInput.classList.add('error');
-        emailHelperText.innerText = 'Email inválido';
-        emailHelperText.classList.add('visible');
-    }
-});
+//     if (valor.includes("@") && valor.includes(".com")) {
+//         // Estilos para email válido
+//         emailInput.classList.remove('error');
+//         emailHelperText.classList.remove('visible');
+//         emailInput.classList.add('correct');
+//     } else {
+//         // Estilos para email inválido
+//         emailInput.classList.remove('correct');
+//         emailInput.classList.add('error');
+//         emailHelperText.innerText = 'Email inválido';
+//         emailHelperText.classList.add('visible');
+//     }
+// });
 
 btnCadastro.addEventListener('click', function(evento) {
     let valor = emailInput.value;
-    if (valor) {
-        // Lógica de cadastro aqui
+    let valor1 = usernameInput.value;
+    let valor2 = senhaInput.value;
+
+    if (valor === '' || valor1 === '' || valor2 === '') {
+        // enviar para servidor
+        
+        alert('Algum campo está vazio ou prenchido incorretamente. Preencha-o antes de prosseguir.')
     } else {
         evento.preventDefault();
-        alert('O campo de email está vazio. Preencha-o antes de prosseguir.');
+        alert('Cadastro realizado com sucesso');
     }
 });
 
 
 
-// menu suspenso headers
+// // menu suspenso headers
 
-let element = document.getElementById =('itens');
+// let element = document.getElementById =('itens');
 
 function clickMenu() {
     if (itens.style.display == 'block'){

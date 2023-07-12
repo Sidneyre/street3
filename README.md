@@ -3,9 +3,3 @@
 # figma : https://www.figma.com/file/aiVTnUdt2KpMqyZ0VVVN9E/Untitled?node-id=0%3A1&t=YX8gcCVStKuwHmV2-1
 
 
-const hamburguerBtn = document.querySelector('.hamburguer');
-const menu = document.querySelector('.menu');
-
-hamburguerBtn.addEventListener('click', function() {
-  menu.classList.toggle('ativo');
-});
