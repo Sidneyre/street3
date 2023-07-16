@@ -323,7 +323,6 @@ span#arrow:hover {
   position: absolute;
   top: 77px;
   left: 20vh;
-  width: 70%;
   padding: 10px;
   z-index: 1;
 }
@@ -384,6 +383,7 @@ menu {
   padding-right: 70px;
   max-width:100%;
   height: 725px;
+  overflow-x:hidden
 
 }
 
@@ -516,7 +516,6 @@ footer {
   position: relative;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
   margin-top: 20px;
   margin-left: 50px;
   width: 100vh;
@@ -757,9 +756,9 @@ input.correct {
   body {
     background-image: none
   }
-  .nav-index .grid .a{
+  /* .nav-index .grid .a{
     flex-direction:column;
-  }
+  } */
   .hero{
     flex-direction:column;
     align-items: center;
@@ -858,8 +857,14 @@ input.correct {
     background-image: none;
     background-color: #ecd5a9;
   }
-  .nav-index .grid {
-    align-items: center;
-    flex-direction:column;
+  .nav-index {
+    display: flex;
+    flex-direction: column;
+    width: 10vh;
   }
+  /* .grid {
+    position:absolute;
+    background: gray;
+
+  } */
 }
