@@ -36,12 +36,12 @@ const inputsearch = document.querySelector('.divsearch input[type="search"]');
 // array de endereço
 
 let items = [
-  { name: "Rio de Janeiro", link: "http://127.0.0.1:5500/rio-de-janeiro/cidade-rio.html" },
-  { name: "Arraial do Cabo", link: "http://127.0.0.1:5500/rio-de-janeiro/arraial-do-cabo.html" },
-  { name: "Petropolis", link: "http://127.0.0.1:5500/rio-de-janeiro/petropolis.html" },
-  { name: "Campos do Jordão", link: "http://127.0.0.1:5500/sao-paulo/campos-do-jordao.html" },
-  { name: "Holambra", link: "http://127.0.0.1:5500/sao-paulo/holambra.html" },
-  { name: "São Roque", link: "http://127.0.0.1:5500/sao-paulo/sao-roque.html" },
+  { name: "Rio de Janeiro", link: "./rio-de-janeiro/cidade-rio.html" },
+  { name: "Arraial do Cabo", link: "./rio-de-janeiro/arraial-do-cabo.html" },
+  { name: "Petropolis", link: "./rio-de-janeiro/petropolis.html" },
+  { name: "Campos do Jordão", link: "./sao-paulo/campos-do-jordao.html" },
+  { name: "Holambra", link: "./sao-paulo/holambra.html" },
+  { name: "São Roque", link: "./sao-paulo/sao-roque.html" },
   // adicionar cidade minas gerais
 ];
 
